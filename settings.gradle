@@ -1,0 +1,4 @@
+include ':usbCameraCommon'
+include ':libuvccamera'
+include ':app'
+rootProject.name = "Photo Measure"

@@ -1,0 +1,9 @@
+com/serenegiant/usbcameratest0/BuildConfig.java
+ com.serenegiant.usbcameratest0.BuildConfig
+com/serenegiant/usbcameratest0/MainActivity.java
+ com.serenegiant.usbcameratest0.MainActivity
+ com.serenegiant.usbcameratest0.MainActivity$1
+ com.serenegiant.usbcameratest0.MainActivity$2
+ com.serenegiant.usbcameratest0.MainActivity$2$1
+ com.serenegiant.usbcameratest0.MainActivity$3
+ com.serenegiant.usbcameratest0.MainActivity$4

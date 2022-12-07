@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~  UVCCamera
+4  ~  library and sample to access to UVC web camera on non-rooted Android device
+5  ~
+6  ~ Copyright (c) 2014-2017 saki t_saki@serenegiant.com
+7  ~
+8  ~  Licensed under the Apache License, Version 2.0 (the "License");
+9  ~  you may not use this file except in compliance with the License.
+10  ~   You may obtain a copy of the License at
+11  ~
+12  ~      http://www.apache.org/licenses/LICENSE-2.0
+13  ~
+14  ~   Unless required by applicable law or agreed to in writing, software
+15  ~   distributed under the License is distributed on an "AS IS" BASIS,
+16  ~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+17  ~   See the License for the specific language governing permissions and
+18  ~   limitations under the License.
+19  ~
+20  ~  All files in the folder are under this Apache License, Version 2.0.
+21  ~  Files in the libjpeg-turbo, libusb, libuvc, rapidjson folder
+22  ~  may have a different license, see the respective files.
+23-->
+24<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+25    package="com.serenegiant.usbcameratest0"
+26    android:versionCode="8"
+27    android:versionName="3.00" >
+28
+29    <uses-sdk
+30        android:minSdkVersion="14"
+30-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml
+31        android:targetSdkVersion="23" />
+31-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml
+32
+33    <application
+33-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:27:5-40:19
+34        android:allowBackup="true"
+34-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:28:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.0.0] C:\Users\Raron\.gradle\caches\transforms-2\files-2.1\de66cade21afc2c94a5efde307d3b93e\core-1.0.0\AndroidManifest.xml:22:18-86
+36        android:debuggable="true"
+37        android:icon="@drawable/ic_launcher"
+37-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:29:9-45
+38        android:label="@string/app_name"
+38-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:30:9-41
+39        android:testOnly="true"
+40        android:theme="@style/Theme.AppCompat.Light" >
+40-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:31:9-53
+41        <activity
+41-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:32:9-39:20
+42            android:name="com.serenegiant.usbcameratest0.MainActivity"
+42-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:33:13-71
+43            android:label="@string/app_name" >
+43-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:34:13-45
+44            <intent-filter>
+44-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:35:13-38:29
+45                <action android:name="android.intent.action.MAIN" />
+45-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:36:17-69
+45-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:36:25-66
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+47-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:37:17-77
+47-->D:\Inzynierka\Test\usbCameraTest0\src\main\AndroidManifest.xml:37:27-74
+48            </intent-filter>
+49        </activity>
+50    </application>
+51
+52</manifest>

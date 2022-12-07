@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest0\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest0\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest0\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest0\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest0\\build\\intermediates\\res\\merged\\debug\\xml_device_filter.xml.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest0\\src\\main\\res\\xml\\device_filter.xml"
+    }
+]

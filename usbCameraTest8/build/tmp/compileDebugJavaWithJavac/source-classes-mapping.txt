@@ -1,0 +1,16 @@
+com/serenegiant/usbcameratest8/BuildConfig.java
+ com.serenegiant.usbcameratest8.BuildConfig
+com/serenegiant/usbcameratest8/MainActivity.java
+ com.serenegiant.usbcameratest8.MainActivity
+ com.serenegiant.usbcameratest8.MainActivity$1
+ com.serenegiant.usbcameratest8.MainActivity$10
+ com.serenegiant.usbcameratest8.MainActivity$11
+ com.serenegiant.usbcameratest8.MainActivity$2
+ com.serenegiant.usbcameratest8.MainActivity$3
+ com.serenegiant.usbcameratest8.MainActivity$4
+ com.serenegiant.usbcameratest8.MainActivity$5
+ com.serenegiant.usbcameratest8.MainActivity$6
+ com.serenegiant.usbcameratest8.MainActivity$6$1
+ com.serenegiant.usbcameratest8.MainActivity$7
+ com.serenegiant.usbcameratest8.MainActivity$8
+ com.serenegiant.usbcameratest8.MainActivity$9

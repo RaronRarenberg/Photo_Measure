@@ -1,0 +1,42 @@
+com/serenegiant/encoder/MediaAudioEncoder.java
+ com.serenegiant.encoder.MediaAudioEncoder
+ com.serenegiant.encoder.MediaAudioEncoder$1
+ com.serenegiant.encoder.MediaAudioEncoder$AudioThread
+com/serenegiant/encoder/MediaEncoder.java
+ com.serenegiant.encoder.MediaEncoder
+ com.serenegiant.encoder.MediaEncoder$MediaEncoderListener
+com/serenegiant/usbcameracommon/AbstractUVCCameraHandler.java
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraCallback
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread$1
+ com.serenegiant.usbcameracommon.AbstractUVCCameraHandler$CameraThread$2
+com/serenegiant/encoder/MediaVideoBufferEncoder.java
+ com.serenegiant.encoder.MediaVideoBufferEncoder
+com/serenegiant/widget/AspectRatioTextureView.java
+ com.serenegiant.widget.AspectRatioTextureView
+com/serenegiant/widget/CameraViewInterface.java
+ com.serenegiant.widget.CameraViewInterface
+ com.serenegiant.widget.CameraViewInterface$Callback
+com/serenegiant/usbcameracommon/UVCCameraHandler.java
+ com.serenegiant.usbcameracommon.UVCCameraHandler
+com/serenegiant/encoder/MediaSurfaceEncoder.java
+ com.serenegiant.encoder.MediaSurfaceEncoder
+com/serenegiant/encoder/MediaMuxerWrapper.java
+ com.serenegiant.encoder.MediaMuxerWrapper
+com/serenegiant/widget/UVCCameraTextureView.java
+ com.serenegiant.widget.UVCCameraTextureView
+ com.serenegiant.widget.UVCCameraTextureView$1
+ com.serenegiant.widget.UVCCameraTextureView$RenderHandler
+ com.serenegiant.widget.UVCCameraTextureView$RenderHandler$RenderThread
+com/serenegiant/encoder/IVideoEncoder.java
+ com.serenegiant.encoder.IVideoEncoder
+com/serenegiant/encoder/IAudioEncoder.java
+ com.serenegiant.encoder.IAudioEncoder
+com/serenegiant/encoder/MediaVideoEncoder.java
+ com.serenegiant.encoder.MediaVideoEncoder
+com/serenegiant/usbcameracommon/UVCCameraHandlerMultiSurface.java
+ com.serenegiant.usbcameracommon.UVCCameraHandlerMultiSurface
+ com.serenegiant.usbcameracommon.UVCCameraHandlerMultiSurface$1
+com/serenegiant/usbcameracommon/BuildConfig.java
+ com.serenegiant.usbcameracommon.BuildConfig

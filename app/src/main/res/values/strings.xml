@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Photo Measure</string>
+    <string name="button"><![CDATA[NEXT ->]]></string>
+    <string name="main_menu_item1">Settings..</string>
+    <string name="main_menu_item2">Dilate iterations</string>
+    <string name="detection_item">Toggle Detection</string>
+    <string name="save_image_item">Save image</string>
+    <string name="shape_rectangle">Rectangle</string>
+    <string name="shape_circle">Circle</string>
+    <string name="debug_mode">Debug mode</string>
+    <string name="pickImage">PICK IMAGE</string>
+    <string name="measure">MEASURE</string>
+    <string name="next_string">SAVE</string>
+    <string name="video">VIDEO</string>
+    <string name="submit">Submit</string>
+    <string name="drag">DRAG</string>
+    <string name="confirm">MEASURE</string>
+    <string name="reference">CONFIRM</string>
+    <string name="saved_baseline1">Baseline1</string>
+    <string name="presetVertSave">SAVE</string>
+    <string name="presetVertLoad">LOAD</string>
+</resources>

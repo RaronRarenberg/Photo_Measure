@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~  UVCCamera
+  ~  library and sample to access to UVC web camera on non-rooted Android device
+  ~
+  ~ Copyright (c) 2014-2017 saki t_saki@serenegiant.com
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~   You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~   Unless required by applicable law or agreed to in writing, software
+  ~   distributed under the License is distributed on an "AS IS" BASIS,
+  ~   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~   See the License for the specific language governing permissions and
+  ~   limitations under the License.
+  ~
+  ~  All files in the folder are under this Apache License, Version 2.0.
+  ~  Files in the libjpeg-turbo, libusb, libuvc, rapidjson folder
+  ~  may have a different license, see the respective files.
+  -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context="wfa.issp.test.VideoActivity"
+    tools:ignore="MergeRootFrame">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:background="@android:color/holo_blue_bright"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+    <com.serenegiant.widget.UVCCameraTextureView
+        android:id="@+id/camera_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/frame_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/camera_view"
+        android:layout_alignLeft="@+id/camera_view"
+        android:layout_alignRight="@+id/camera_view"
+        android:layout_alignTop="@+id/camera_view"
+        app:srcCompat="@drawable/border"/>
+
+    <ToggleButton
+        android:id="@+id/camera_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="ToggleButton"/>
+
+    <Switch
+        android:id="@+id/lefthand_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/camera_button"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/gobackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="GO BACK"
+        android:layout_above="@+id/lefthand_button"/>
+    <TextView
+        android:id="@+id/lefthand_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LEFT HAND"
+        android:layout_toRightOf="@id/lefthand_button"
+        android:layout_above="@+id/camera_button"
+        android:textColor="@color/WHITE"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="2"
+        android:translationZ="90dp"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/referenceButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/camera_button"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:text="@string/reference" />
+
+    <Button
+        android:id="@+id/measureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/camera_button"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:text="@string/confirm" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/presetButton1"
+        android:layout_above="@+id/presetButton1"
+        android:layout_alignRight="@+id/presetButton2"
+        android:background="@color/WHITE"
+        android:maxLength="20"
+        />
+    <Button
+        android:id="@+id/presetButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/presetButton2"
+        android:layout_alignParentBottom="true"
+        android:text="@string/presetVertSave" />
+
+    <Button
+        android:id="@+id/presetButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/camera_view"
+        android:layout_alignParentBottom="true"
+        android:text="@string/presetVertLoad" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/presetButton1"
+        android:layout_above="@+id/presetButton3"
+        android:layout_alignRight="@+id/presetButton2"
+        android:background="@color/WHITE"
+        android:maxLength="20"
+        />
+    <Button
+        android:id="@+id/presetButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_toLeftOf="@id/presetButton2"
+        android:text="@string/presetVertSave" />
+
+    <Button
+        android:id="@+id/presetButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText1"
+        android:layout_alignRight="@id/camera_view"
+        android:text="@string/presetVertLoad" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/tools_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/camera_view"
+        android:layout_alignRight="@id/camera_view"
+        android:layout_marginTop="0dp">
+
+        <Button
+            android:id="@+id/brightness_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+
+            android:text="brightness"/>
+
+        <Button
+            android:id="@+id/contrast_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_half"
+            android:layout_marginTop="@dimen/vertical_margin"
+            android:layout_toRightOf="@+id/brightness_button"
+            android:text="contrast"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/value_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignLeft="@id/camera_view"
+        android:layout_alignRight="@id/camera_view"
+        android:background="#22ffffff"
+        android:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/reset_button"
+            android:layout_width="@dimen/sz_icon_camera_ctrl"
+            android:layout_height="@dimen/sz_icon_camera_ctrl"
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/ic_launcher"/>
+
+        <SeekBar
+            android:id="@+id/setting_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/reset_button"
+            android:max="100"
+            android:progress="50"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dragViewVert1"
+        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewVertBold1"
+        android:layout_height="200dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="60dp"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewVertBold2"
+        android:layout_height="200dp"
+        android:layout_width="30dp"
+        android:layout_marginLeft="120dp"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewVert2"
+        android:layout_height="wrap_content"
+        android:layout_width="10dp"
+        android:layout_marginLeft="120dp"
+        android:background="@color/AQUAMARINE"
+        />
+    <View
+        android:id="@+id/dragViewHor1"
+        android:layout_height="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="320dp"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewHorBold1"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="320dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewHor2"
+        android:layout_height="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="480dp"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewHorBold2"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="480dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewHor3"
+        android:layout_height="10dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="220dp"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+
+    <View
+        android:id="@+id/dragViewHorBold3"
+        android:layout_height="30dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="220dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@color/AQUAMARINE"
+        />
+</RelativeLayout>

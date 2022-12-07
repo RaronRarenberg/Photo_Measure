@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+raw camera_click
+string app_name

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Inzynierka\\Test\\usbCameraTest8\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Inzynierka\\Test\\usbCameraTest8\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

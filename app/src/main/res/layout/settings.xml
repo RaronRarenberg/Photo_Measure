@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:rsb="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+
+
+        <TextView
+            android:id="@+id/text_cm_to_px"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:text="Needle width: "/>
+        <EditText
+            android:id="@+id/edit_text_cm_to_px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <!-- Apply button -->
+        <Button android:id="@+id/button_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:onClick="onApplySettings" />
+
+    </LinearLayout>
+</ScrollView>

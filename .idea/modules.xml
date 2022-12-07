@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Photo_Measure.iml" filepath="$PROJECT_DIR$/.idea/modules/Photo_Measure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Photo_Measure.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Photo_Measure.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libuvccamera/Photo_Measure.libuvccamera.iml" filepath="$PROJECT_DIR$/.idea/modules/libuvccamera/Photo_Measure.libuvccamera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/usbCameraCommon/Photo_Measure.usbCameraCommon.iml" filepath="$PROJECT_DIR$/.idea/modules/usbCameraCommon/Photo_Measure.usbCameraCommon.iml" />
+    </modules>
+  </component>
+</project>
